@@ -10,22 +10,16 @@ else if (distance > 400 && distance <= 2000) {return 'That will be twenty bucks.
   }
 
   function ternaryCheckCity(location){
-    // Write your code here!
-    if (location === 'NYC') {
-      return 'Ok, sounds good.'
-    }
-    else {return 'No go.'}
+    return location === 'NYC' ? 'Ok, sounds good.' : 'No go.'
   }
 
   function switchOnCharmFromTip(amount){
-    // Write your code here!
-    if (amount === 'generous') {
-      return 'Thank you so much.'
-    }
-    else if (amount === 'not as generous') {
-      return 'Thank you.'
-    }
-    else if (amount === 'thanks for everything') {
-      return 'Bye.'
+    switch(amount){
+      case 'generous' :
+         return 'Thank you so much.'
+      case 'not as generous' :
+        return 'Thank you.'
+      default :
+        return 'Bye.'
     }
   }
